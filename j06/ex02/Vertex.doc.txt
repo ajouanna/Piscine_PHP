@@ -1,0 +1,6 @@
+<- Vertex ----------------------------------------------------------------------
+La classe Vertex fournit une encapsulation d'un point.
+On construit une instance en lui passant dans un array les parametres 
+obligatoires x, y, z et w, et le parametre optionnel color de lq classe Color.
+L'attribut public verbose permet de tracer qund il est a true
+---------------------------------------------------------------------- Vertex ->

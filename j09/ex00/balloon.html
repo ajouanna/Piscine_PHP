@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<div  id = "balloon" onclick="clic()" onmouseout="sortie(diametre)"
+			style="background: red; 
+				height: 200px; 
+				width: 200px; 
+				border-radius: 50%;">
+
+		<script>
+		// ce script affiche un ballon et le gonfle par clic
+		// et degonfle en sortant la souris du ballon
+		// en outre, le ballon change de couleur dans un sens
+		// ou dans l'autre
+		// diametre min = 200 et diametre max = 420
+		var diametre = 200; // on ne passe qu'une fois ici
+		function sortie()
+		{
+			var elem = document.getElementById('balloon');
+			if (elem != null)
+			{
+				var width = elem.style.width;
+				if (width != null)
+				{
+					diametre -= 5;
+					if (diametre < 200)
+						diametre = 200;
+					elem.style.width = diametre + "px";
+					elem.style.height = diametre + "px";
+					return couleur("-");
+				}
+			}
+			return false;
+		}
+		function clic()
+		{
+			var elem = document.getElementById('balloon');
+			if (elem != null)
+			{
+				var width = elem.style.width;
+				if (width != null)
+				{
+					diametre += 10;
+					if (diametre > 420)
+						diametre = 200;
+					elem.style.width = diametre + "px";
+					elem.style.height = diametre + "px";
+	
+					return couleur("+");
+				}
+			}
+			return false;
+		}
+		function couleur(sens)
+		{
+			var elem = document.getElementById('balloon');
+			if (elem != null)
+			{
+				var bckcol = elem.style.background;
+				if (bckcol != null)
+				{
+					if (sens == "+")
+					{
+					if (bckcol == 'red')
+						elem.style.background = 'green';
+					else if (bckcol == 'green')
+						elem.style.background = 'blue';
+					else if (bckcol == 'blue')
+						elem.style.background = 'red';
+					}
+					else
+					{
+					if (bckcol == 'blue')
+						elem.style.background = 'green';
+					else if (bckcol == 'green')
+						elem.style.background = 'red';
+					else if (bckcol == 'red')
+						elem.style.background = 'blue';
+					}
+					return true;
+				}
+			}
+			return false;
+		}
+		</script>
+		</div>
+	</body>
+</html>
+

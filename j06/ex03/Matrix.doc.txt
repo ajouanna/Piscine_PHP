@@ -1,0 +1,21 @@
+<- Matrix ----------------------------------------------------------------------
+La classe Matrix fournit une encapsulation d'une matrice.
+On construit une instance en lui passant dans un array les parametres :
+’preset’ : type de matrice à construire, obligatoire. La valeur doit être l’une
+des constantes de classe (IDENTITY, SCALE, RX, RY, RZ, TRANSLATION et
+PROJECTION.
+’scale’ : le facteur d’échelle, obligatoire quand ’preset’ vaut SCALE.
+’angle’ : angle de rotation en radians, obligatoire quand ’preset’ vaut RX, RY
+ou RZ.
+’vtc’ : vecteur de translation, obligatoire quand ’preset’ vaut TRANSLATION.
+’fov’ : champs de vision de la projection en degrés, obligatoire quand ’preset’
+vaut PROJECTION.
+’ratio’ : ratio de l’image projetée, obligatoire quand ’preset’ vaut PROJECTION.
+’near’ : plan de clipping proche de la projection, obligatoire quand ’preset’ 
+vaut PROJECTION.
+’far’ : plan de clipping éloigné de la projection, obligatoire quand ’preset’
+vaut PROJECTION.
+preset, scale, angle, bligatoire) et orig de type Vertex (optionnel)
+L'attribut public verbose permet de tracer quand il est a true
+Les methodes suivantes sont disponibles : mult et transformVertex
+---------------------------------------------------------------------- Matrix ->

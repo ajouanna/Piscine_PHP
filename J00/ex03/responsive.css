@@ -1,0 +1,62 @@
+			table {
+				width: 100%;
+			}
+			td
+			{
+				border: 1px solid black;
+				position: relative;
+			}
+			.sans-bord {
+				border: none;
+			}
+			.elem {
+				text-align: center;
+				font-size: 1.5vw;
+			}
+			.num {
+				position: absolute;
+				bottom: 0px;
+				margin-bottom: 1px;
+				left: 1px;
+				font-size: .8vw;
+			}
+			.poids {
+				position: absolute;
+				top: 0px;
+				margin-top: 1px;
+				right: 1px;
+				font-size: .8vw;
+			}
+			.metaux-alcalins {
+				background-color: #ff5050;
+			}
+			.alcalino-terreux {
+				background-color: #ffffcc;
+			}
+			.lanthanides {
+				background-color: #ff66ff;
+			}
+			.actinides {
+				background-color: #ff99cc;
+			}
+			.metaux-de-transition {
+				background-color: #ffcccc;
+			}
+			.metaux-pauvres {
+				background-color: #808080;
+			}
+			.metalloides {
+				background-color: #999966;
+			}
+			.non-metaux {
+				background-color: #99ff99;
+			}
+			.halogenes {
+				background-color: #ffff66;
+			}
+			.gaz-nobles {
+				background-color: #80e5ff;
+			}
+			.non-classes {
+				background-color: #d6d6c2;
+			}

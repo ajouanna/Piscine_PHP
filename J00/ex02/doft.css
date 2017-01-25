@@ -1,0 +1,123 @@
+body {
+  background-color: #505050;
+  margin: 18px 0 0 8px;
+}
+
+div.container {
+    width: 1420px;
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
+    width: 1420px;
+    position: relative;
+    }
+
+header, .menu_gauche, .menu_droite, .image_centrale, .saisie {
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    background-color: #909090;
+}
+
+header img.logo {
+    height: 110px;
+    margin: 10px 0 0 10px;
+}
+
+header img.loupe {
+    position: absolute;
+    // width: 250px;
+    height: 150px;
+    top: 20px;
+    right: 30px;
+}
+
+header img.fermeture, header img.recharge {
+    position: absolute;
+    right: 10px;
+}
+header img.recharge {
+  height: 30px;
+  width: 20px;
+  top: 10px;
+}
+
+header img.fermeture {
+	bottom: 10px;
+  height: 30px;
+  width: 20px;
+}
+
+footer {
+    text-align: center;
+    border-radius: 20x;
+    box-shadow: 10px 10px;
+}
+.menu_gauche {
+    width: 108px;
+    height: 410px;
+    float: left;
+    margin: 20px 0 0 30px;
+    padding: 15px 0 0 32px;
+}
+
+.menu_gauche img {
+    width: 70px;
+    margin-bottom: 6px;
+}
+
+.menu_gauche img.entoure {
+    border: 5px solid red;
+    margin: -5px 0 1px -5px;
+    border-radius: 5px;
+}
+
+.image_centrale {
+    margin: 20px 0 0 30px;
+    width: 1020px;
+    height: 582px;
+    float: left;
+    position: relative;
+}
+
+.image_centrale img {
+    margin: 10px;
+    width: 1000px;
+    height: 562px;
+}
+
+.menu_droite {
+    width: 105px;
+    height: 410px;
+    float: left;
+    margin: 20px 0 0 30px;
+    padding: 15px 0 0 35px;
+    border-radius: 10px;
+}
+.menu_droite img {
+    width: 60px;
+    margin-bottom: 6px;
+}
+
+.menu_droite .mur {
+        // content: '';
+        background-image: url('resources/brick.jpg');
+        width: 100px;
+        height: 70px;
+        margin: -10px
+    }
+
+.saisie {
+  background-color: #88ff89;
+  width: 500px;
+  height: 150px;
+  position: absolute;
+  bottom: -90px;
+  left: -250px;
+  padding: 10px;
+  font-family: arial;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+	<title>It's over 9000</title>
+	</head>
+	<body>
+	<form  id="calculette" onsubmit="return processSubmit()">
+		<input type = 'number' name = 'gauche'>
+		<select id='ope'>
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+			<option>%</option>
+		</select>
+		<input type = 'number' name = 'droite'>
+		<input type = 'submit' value = "Try me!">
+	</form> 
+	<script>
+		var foo = setInterval(myTimer, 30000);
+		// tester ici : localhost:8080/j09/ex01/calc.html
+		function processSubmit()
+		{
+			var calc = document.getElementById("calculette");
+			if (calc != null)
+			{
+				var gauche = parseInt(document.forms["calculette"]["gauche"].value);
+				var droite = parseInt(document.forms["calculette"]["droite"].value);
+				var operateur = document.getElementById("ope").value;
+				var res = 0;
+				if (gauche >= 0 && droite >=0)
+				{
+					switch(operateur) {
+					    case "+":
+					    	res = gauche+droite;
+					        alert(res);
+					        console.log(res);
+					        break;
+					    case "-":
+					        res = gauche-droite;
+					        alert(res);
+					        console.log(res);
+					        break;
+					    case "*":
+					        res = gauche*droite;
+					        alert(res);
+					        console.log(res);
+					        break;
+					    case "/":
+					    	if (droite !== 0)
+					    	{
+						        res = gauche/droite;
+						        alert(res);
+						        console.log(res);
+						    }
+						    else
+						    {
+						    	var msg = "It's over 9000 !";
+						    	alert(msg);
+						    	console.log(msg); 
+						    	return false;
+						    }
+					        break;
+					    case "%":
+					    	if (droite !== 0)
+					    	{
+						        res = gauche%droite;
+						        alert(res);
+						        console.log(res);
+						    }
+						    else
+						    {
+						    	var msg = "It's over 9000 !";
+						    	alert(msg);
+						    	console.log(msg);
+						    	return false;
+						    }
+					        break;
+					    default:
+					    	var msg = "Pas d'operation detectee";
+					        alert(msg);
+					        console.log(msg);
+					}
+	 				return true;
+ 				}
+			}
+			console.log('Error :(');
+			alert('Error :(');
+			return false;
+		}
+
+		function myTimer()
+		{
+			alert("Please, use me...");
+		}
+	</script>
+	</body>
+</html>
+

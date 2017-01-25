@@ -1,0 +1,9 @@
+<- Vector ----------------------------------------------------------------------
+La classe Vector fournit une encapsulation d'un vecteur.
+On construit une instance en lui passant dans un array les parametres 
+dest de type Vertex (obligatoire) et orig de type Vertex (optionnel)
+L'attribut public verbose permet de tracer quand il est a true
+Les methodes suivantes sont disponibles :
+magnitude, add, sub, opposite, sclarProduct, dotProduct, cos et crossProduct
+Ce qui me rappelle un vieux group des annee 80 : kass product
+---------------------------------------------------------------------- Vector ->
